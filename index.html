@@ -17,7 +17,7 @@
         </a>
         <ul class="nav__link--position">
           <li>
-           <a href="./index.html" class="nav__link">Studio</a>
+           <a href="./index.html" class="nav__link index__current">Studio</a>
           </li>
           <li>
             <a href="./portfolio.html" class="nav__link">Portfolio</a>
@@ -56,6 +56,39 @@
           </button>
           <div class="is-hidden" data-modal>
             <div class="index--modal__hidden">
+              <div>
+              <form name="signup_form" autocomplete="on" novalidate>
+                <findset class="jedena">
+                <legend class="index__pop-up--window-title">Leave your contacts and we will call you back
+                </legend>
+                <label class="index__label">
+                  Name
+                  <input type="text" name="name" />
+                </label>
+                <label class="index__label">
+                  Phone
+                  <input type="tel" name="phone_number">
+                </label>
+                <label class="index__label">
+                  Email
+                  <input type="text" name="email">
+                </label>
+                <label class="index__label">
+                  Comment
+                  <textarea name="comment" rows="5" placeholder="Text input" class="comment__section">
+                  </textarea>
+                </label>
+                <label>
+                  <input type="checkbox" name="accept">
+                  <div class="privacy-policy">
+                  I accept th terms and conditions of the Privacy Policy
+                </div>
+                </label>
+              </findset>
+              <div class="przycisk">
+                <button type="submit" class="pop-up__send--btn">Send</button>
+              </form>
+              </div>
             <button class="close--btn" data-modal-close >
               <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
                 <g clip-path="url(#clip0_621310_150)">
@@ -341,19 +374,21 @@
           </h5>
           <ul class="customers__icon--list">
             <li>
-              <a href="#">
-              <svg class="customers__icon, customers__icon--border">
+              <a href="#" class="customers__icon--hover">
+                  <div class="customers__icon--border">
+              <svg class="customers__icon">
                 <use href="./images/icons.svg#icon-client-1"></use>
               </svg>
+                  </div>
           </a>
             </li>
             <li>
               <a href="#">
-          
-              <svg class="customers__icon customers__icon--border">
+              <div class="customers__icon--border">
+              <svg class="customers__icon">
                 <use href="./images/icons.svg#icon-client-2"></use>
               </svg>
-
+            </div>
             </a>
             </li>
             <li>
@@ -366,7 +401,7 @@
             </a>
             </li>
             <li>
-              <a href="">
+              <a href="#">
               <div class="customers__icon--border">
               <svg class="customers__icon">
                 <use href="./images/icons.svg#icon-client-4"></use>
@@ -412,9 +447,9 @@
         <div>
           <p class="footer__title">Social media</p>
           <ul class="footer__icon--position">
-            <li class="footer__icon--background">
+            <li>
               <div class="footer__social--icons">
-                <a href="#">
+                <a href="#" class="footer__icon--background">
                     <svg class="footer__icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
@@ -430,21 +465,26 @@
                 </a>
               </div>    
             </li>
-            <li class="footer__icon--background">
-                <a href="#">
-                    <svg class="footer__icon">>
+            <li>
+                <a href="#" class="footer__icon--background">
+                    <svg class="footer__icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                 </a>    
             </li>
-            <li class="footer__icon--background">
-                <a href="#">
-                    <svg class="footer__icon">>
+            <li>
+                <a href="#" class="footer__icon--background">
+                    <svg class="footer__icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
                 </a>
             </li>
           </ul>
+          <label class="index__label">
+            Subscribe
+            <input type="text" name="email" />
+          </label>
+          <button type="submit" class="footer__btn">Subscribe</button>
         </div>
         </div>
     </section>
