@@ -275,16 +275,19 @@ a:focus {
 .index__label{
   color: #8e8f99;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 14px;
   letter-spacing: 0.48px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 24px;
   margin-bottom: 4px;
-margin-top: 8px;
+
 }
 
 .privacy-policy{
-  color: #8e8f99;
+color: #8e8f99;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
@@ -301,7 +304,6 @@ border-radius: 4px;
 background-color: var(--color-iris);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 margin-top: 24px;
-
 }
 
 .comment__section{
@@ -310,7 +312,34 @@ margin-top: 24px;
   border-radius: 4px;
   border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
 }
+input[type="text"]{
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  flex-shrink: 0;
+  border: 1px solid #2E2F4266
+}
+input[text]:focus{
+border-color: var(--color-iris);
+transition: cubic-bezier(0.4, 0, 0.2, 1)
+}
 
+input[checkbox]{
+
+}
+
+.comment__section{
+width: 360px;
+height: 120px;
+flex-shrink: 0;
+border-radius: 4px;
+border: 1px solid var(--brand-color 46, 47, 66, 0.40);
+}
+
+.privacy-policy__color-change{
+  color: var(--color-iris);
+  text-decoration: underline;
+}
 
 /* SECTION FEATURES */ /* SECTION FEATURES */ /* SECTION FEATURES */
 
@@ -601,10 +630,20 @@ height: 56px;
   letter-spacing: 0.64px;
   justify-content: center;
   padding: 8px 24px;
-  gap: 16px;
   border-radius: 4px;
   background-color: var(--color-iris);
 }
+
+.index__label--footer{
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  display: flex;
+  flex-direction: column;
+}
+
 
 /* PORTFOLIO */ /* PORTFOLIO */ /* PORTFOLIO */ /* PORTFOLIO */
 
@@ -612,14 +651,15 @@ height: 56px;
   padding-top: 100px;
   padding-bottom: 120px;
 }
-.portfolio__btn--position
-{
+
+.portfolio__btn--position{
 display: flex;
 gap: 24px;
 max-width: 586px;
 margin: 0 auto;
 margin-bottom: 72px;
 }
+
 .portfolio__btn
 {
   color: var(--color-iris);
@@ -627,7 +667,7 @@ margin-bottom: 72px;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   letter-spacing: 0.64px;
   align-items: flex-start;
   display: flex;
@@ -714,6 +754,8 @@ border: 1px solid #E7E9FC
 .portfolio--wrapper:hover .portfolio--overlay {
   opacity: 1;
 }
+
+
  
 
 

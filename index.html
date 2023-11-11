@@ -63,11 +63,11 @@
                 </legend>
                 <label class="index__label">
                   Name
-                  <input type="text" name="name" />
+                  <input type="text" name="name"/>
                 </label>
                 <label class="index__label">
                   Phone
-                  <input type="tel" name="phone_number">
+                  <input type="text" type="tel" name="phone_number">
                 </label>
                 <label class="index__label">
                   Email
@@ -75,13 +75,13 @@
                 </label>
                 <label class="index__label">
                   Comment
-                  <textarea name="comment" rows="5" placeholder="Text input" class="comment__section">
+                  <textarea name="comment" placeholder="Text input" class="comment__section">
                   </textarea>
                 </label>
                 <label>
                   <input type="checkbox" name="accept">
                   <div class="privacy-policy">
-                  I accept th terms and conditions of the Privacy Policy
+                  I accept th terms and conditions of the <span class="privacy-policy__color-change">Privacy Policy</span>
                 </div>
                 </label>
               </findset>
@@ -480,11 +480,11 @@
                 </a>
             </li>
           </ul>
-          <label class="index__label">
-            Subscribe
-            <input type="text" name="email" placeholder="E-mail"/>
-          </label>
-          <button type="submit" class="footer__btn">Subscribe</button>
+            <label class="index__label--footer">
+              Subscribe
+              <input type="text" name="email" placeholder="E-mail"/>
+            </label>
+            <button type="submit" class="footer__btn">Subscribe</button>
         </div>
         </div>
     </section>
