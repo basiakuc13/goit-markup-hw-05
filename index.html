@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
         </a>
         <ul class="nav__link--position">
           <li>
-           <a href="./index.html" class="nav__link index__current">Studio</a>
+           <a href="./index.html" class="index__current">Studio</a>
           </li>
           <li>
             <a href="./portfolio.html" class="nav__link">Portfolio</a>
@@ -58,21 +59,31 @@
             <div class="index--modal__hidden">
               <div>
               <form name="signup_form" autocomplete="on" novalidate>
-                <findset class="jedena">
-                <legend class="index__pop-up--window-title">Leave your contacts and we will call you back
-                </legend>
-                <label class="index__label">
-                  Name
-                  <input type="text" name="name"/>
-                </label>
+                <findset class="modal__window--plan">
+                <p class="index__pop-up--window-title">Leave your contacts and we will call you back
+                </p>
+              
+              <div class="form-contacts-div">
+                <label class="index__label--name">
+                  Name </label>
+                  <input type="text" name="name" required/>
+               <svg class="modal-icon" width="8" height="8">
+                <use href="./images/symbol-defs5.svg#icon-person-black-1"></use>
+               </svg>
                 <label class="index__label">
                   Phone
-                  <input type="text" type="tel" name="phone_number">
                 </label>
+                  <input type="text" type="tel" name="phone_number" required>
+                  <svg class="modal-icon" width="8" height="8">
+                    <use href="./images/symbol-defs5.svg#icon-phone-black-2"></use>
+                   </svg>
                 <label class="index__label">
                   Email
-                  <input type="text" name="email">
                 </label>
+                  <input type="text" name="email" required>
+                  <svg class="modal-icon" width="8" height="8">
+                    <use href="./images/symbol-defs5.svg#icon-email-black-3"></use>
+                   </svg>
                 <label class="index__label">
                   Comment
                   <textarea name="comment" placeholder="Text input" class="comment__section">
@@ -493,7 +504,3 @@
   <script src="./js/modal.js"></script>
   </body>
 </html>
-
-
-
-
